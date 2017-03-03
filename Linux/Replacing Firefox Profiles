@@ -1,0 +1,10 @@
+To backup/restore firefox profiles do the following:
+
+
+set up a new profile.
+
+navigate to /home/hacker/.mozilla/firefox/ 
+
+replace the new files with the old ones 
+
+finished :)
