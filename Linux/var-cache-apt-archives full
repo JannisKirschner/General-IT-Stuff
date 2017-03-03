@@ -1,0 +1,14 @@
+var/cache/apt/archives no space
+--------------------------------------------------
+
+
+Solution 1: sudo apt-get autoclean
+Removes only unnessesary packages
+
+Solution 2: sudo apt-get clean
+Way harder than 1 
+
+Solution 3: check diskspace (df -h)
+Is enough space available?
+
+
