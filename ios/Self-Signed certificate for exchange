@@ -1,0 +1,7 @@
+Currently there's a problem with using self-signed certificates (for exchange) on ios 10.3.
+It somehow doesn't accept it, but here's a workaround:
+
+first try to log in with wrong credentials (except for the server).
+after an error click "continue" and change the credentials to the working ones...
+
+...finished :) You now should be able to use self-signed certificates on ios 10.3.
