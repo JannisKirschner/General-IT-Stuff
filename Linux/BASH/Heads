@@ -1,0 +1,3 @@
+To show only the first few lines:
+
+head file.txt
