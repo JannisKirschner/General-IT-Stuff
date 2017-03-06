@@ -1,0 +1,7 @@
+***I used the following solution for Ubuntu, so I'm not quite sure if it works on other distributions***
+
+To change the keyboard layout/key mappings you can use the 
+"loadkeys ch"  (ch for switzerland, de for germany, us for united states) command.
+
+The better solution would be "sudo dpkg-reconfigure keyboard-configuration".
+This command lets you completely reconfigure the default keyboard for the whole machine.
