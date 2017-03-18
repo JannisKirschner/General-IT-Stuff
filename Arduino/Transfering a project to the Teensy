@@ -1,0 +1,7 @@
+Transfering a project to the Teensy
+-----------------------------------
+(For Arduino IDE)
+
+-Write the script
+-click verify
+-now the teensy loader should pop up and you can click the button on the teensy
