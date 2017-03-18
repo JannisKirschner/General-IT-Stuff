@@ -1,0 +1,13 @@
+Setting the Teensy up
+---------------------
+
+
+First install the Arduino IDE (If you want to use it)
+Afterwards install the teensy loader: https://www.pjrc.com/teensy/loader.html
+Lastly you need the teensyduino plugin: https://www.pjrc.com/teensy/td_download.html
+
+In the Arduino IDE you can now choose your teensy version
+
+
+
+Source: https://www.pjrc.com/teensy/tutorial.html
