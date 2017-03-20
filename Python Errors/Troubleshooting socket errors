@@ -1,0 +1,7 @@
+Troubleshooting socket errors
+-----------------------------
+
+Try open the failed connection in telnet to see if it's the client or server causing the issue.
+
+-open cmd
+-"telnet host port"
