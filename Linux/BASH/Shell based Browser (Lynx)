@@ -1,0 +1,7 @@
+Shell based Browser (Lynx)
+--------------------------
+
+Installation: apt-get install lynx-cur
+
+Use: lynx "website" (without "")
+Example: lynx www.google.com
