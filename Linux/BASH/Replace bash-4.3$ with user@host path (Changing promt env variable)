@@ -1,0 +1,18 @@
+Replace bash-4.3$ with user@host path (Changing promt env variable)
+-------------------------------------------------------------------
+
+For bash
+export PS1='[\u@\h \w] '
+
+
+
+For tcsh
+export prompt='[%n@%m %~] '
+
+
+
+for zsh
+export PS1='[%n@%m %~] '
+
+
+https://superuser.com/questions/68397/why-does-my-linux-prompt-show-a-instead-of-the-login-name-and-path
