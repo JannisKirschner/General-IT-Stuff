@@ -1,6 +1,12 @@
 *unable to write to /var/cache/apt file could not be parsed*
 -----------------------------------------------------
 
+Error:
+
+-apt installed on Fedora
+
+ E: Unable to write to /var/cache/apt/
+ E: The package lists or status file could not be parsed or opened.
 
 Solution:
 ---------
