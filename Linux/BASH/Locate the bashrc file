@@ -1,0 +1,14 @@
+How to locate the (.)bashrc file
+-------------------------------
+
+
+
+Type in $:  locate bashrc
+
+Results:
+/etc/bashrc
+/etc/bashrc.damaged
+/etc/skel/ .bashrc
+
+
+https://ask.fedoraproject.org/en/question/9132/using-fedora-16-dont-see-bashrc-i-do-see-bashrc-are-they-the-same/
