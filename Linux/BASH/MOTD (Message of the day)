@@ -4,6 +4,7 @@ Here are some infos about message of the day:
 https://de.wikipedia.org/wiki/Message_of_the_Day
 https://www.google.ch/search?q=%2Fetc%2Fmotd&oq=%2Fetc%2Fmotd&aqs=chrome..69i57j69i58&sourceid=chrome&ie=UTF-8
 https://unix.stackexchange.com/questions/139055/how-to-get-text-at-start-up-of-terminal
+http://ask.xmodulo.com/display-change-welcome-message-linux-terminal.html
 
 -add it to /etc/motd
 -add it to .bashrc
