@@ -1,0 +1,28 @@
+Eigene Launcher erstellen (GNOME)
+---------------------------------
+
+Desktop-File erstellen:
+
+-cd /usr/share/applications
+-sudo nano zap.desktop
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=OWASP ZAP Proxy
+Exec=/home/administrator/Dokumente/ZAP-Proxy/ZAP_2.5.0/zap.sh (Skriptname)
+Icon=/home/administrator/Bilder/zap.png      (Icon Name -> Funktioniert hier aber nicht)
+Terminal=false
+Type=Application
+Categories=Web Security; (Developement... was auch immer gewünscht wird)
+
+**************************************************************
+
+Icon anpassen:
+
+-als root einloggen
+-sudo nautilus
+-nach /usr/share/applications navigieren
+-nach Namen suchen
+-auf Logo klicken und neues auswählen
+
+-wieder zum normalen Benutzer wechseln
