@@ -1,0 +1,35 @@
+Installing OWASP ZAP Proxy in Fedora
+------------------------------------
+
+
+*http://openjdk.java.net/install/*
+
+
+-su -c "yum install java-1.8.0-openjdk"
+
+------------------------------------------
+-Download the package as zip:
+https://github.com/zaproxy/zap-api-java
+------------------------------------------
+
+-unzip
+
+-navigate into the folder (cd) 
+
+-run  ./gradlew install
+
+---------------------------------------
+-Download the zip:
+https://github.com/zaproxy/zaproxy
+---------------------------------------
+
+-unzip
+
+-navigate into 'ZAP_2.5.0'
+
+-(run chmod +x zap.sh)
+
+-run ./zap.sh
+
+
+Follow the GUI installation steps
