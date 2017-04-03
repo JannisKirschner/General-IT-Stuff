@@ -1,0 +1,7 @@
+"ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000005)" solution
+---------------------------------------------------------------------------
+
+
+The program simply does't has the needed permissions to execute.
+-run as administrator 
+-via post exploitation tools, scheduled tasks, psexec -s (without debug) for system rights
