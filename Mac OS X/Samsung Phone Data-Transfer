@@ -1,0 +1,21 @@
+How to transfer data from your Samsung phone to your Mac
+--------------------------------------------------------
+
+On Phone:
+--------
+
+-Install SideSync
+-Enable Debug Mode (For USB-Connection)
+
+On Mac:
+-------
+
+-Install SideSinc
+-Plug in phone
+******
+You should now be able to see the phone in the SideSinc application
+*****
+-Click on Settings
+-Click on "Search Phone data"
+
+-Now you can drag and drop the files you need
