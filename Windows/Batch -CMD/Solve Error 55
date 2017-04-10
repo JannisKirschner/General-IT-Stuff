@@ -1,0 +1,7 @@
+Solve Error 55
+--------------
+
+Use: net use <drive letter>: "\\srv-ip or name\path to share"
+
+-quote chars?
+-no \ after share?
