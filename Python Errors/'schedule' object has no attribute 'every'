@@ -1,0 +1,3 @@
+Error: 'schedule' object has no attribute 'every' 
+
+Solution: Don't name your file schedule.py 
