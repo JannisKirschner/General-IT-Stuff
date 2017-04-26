@@ -1,0 +1,10 @@
+How to create alias addresses in exchange management console (Windows 2010)
+---------------------------------------------------------------------------
+
+-Click on the exchange management console symbol
+-Expand "recipient configuration"
+-Click on "mailbox"
+-Rightclick and choose "properties"
+-Click on the "E-mail addresses" tab
+-Click on the green plus (add)
+-Type in your new alias address and click ok
