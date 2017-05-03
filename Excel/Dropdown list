@@ -1,0 +1,5 @@
+How to create a dropdown list
+-----------------------------
+-Create the cells you want to choose from
+-Go to Data -> Data validation
+-Allow: List, Source: the cells you created
