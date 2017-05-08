@@ -1,0 +1,14 @@
+Test SQL connections with UDL files
+----------------------------------
+
+*With this trick you can test SQL connections (SQL Native, OLE and more) with ease*
+
+-Rightclick on Desktop
+-"New" -> textdocument
+-Call it test.udl  (you can replace test with anything you'd like)
+-Accept the message
+-Doubleclick on it
+
+
+
+Without this method you'd need to check it via ODBC or external tools
