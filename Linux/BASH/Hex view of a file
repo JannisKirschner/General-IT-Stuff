@@ -1,0 +1,7 @@
+ cat filename| xxd
+ or
+ echo 'whatever' | xxd
+ 
+ alternatively you can use:
+ hexdump filename (without ASCII)
+ 
