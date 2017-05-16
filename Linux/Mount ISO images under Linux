@@ -1,0 +1,19 @@
+Mount ISO images under Linux
+----------------------------
+
+change to superuser
+
+$ (sudo) su 
+
+create the directory (mountpoint)
+
+# mkdir -p /mnt/disk
+
+mount the iso file 
+
+# mount -o loop filename.iso /mnt/disk
+
+show directory
+
+# cd /mnt/disk
+# ls -l
