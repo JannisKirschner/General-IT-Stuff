@@ -1,0 +1,116 @@
+Linux Forensics 101
+-------------------
+J. Kirschner
+
+
+Used Linux System: CAINE (Kali Linux in Forensic mode should work too)
+ATTENTION I EXPERIENCED PROBLEMS WITH THE CAINE USB WRITE PROTECTION
+
+
+find connected devices:
+	sudo blkid 
+
+	Example:  /dev/DEVICENAME: LABEL="LABELNAME" UUID="UUIDNAME" Type="TYPENAME" PARTUUID="PARTUUIDNAME"
+	Result:  /dev/sdh1: LABEL="KINGSTON" UUID="3E83-D894" TYPE="vfat" PARTUUID="3e304dd8-01"
+		     (sdh=Devicename sdh1/sdh2/sdh3...=Partitionname)
+
+
+
+
+show connected devices with bus number:
+	lsusb
+
+	Result: *bus information* *ID information* *Device Name*
+
+
+
+
+create md5 hashes:
+	(sudo) md5sum file
+	
+	Example: sudo md5sum /dev/sdh
+	Result: *hash* /dev/sdh
+
+
+
+
+make a data dump (blocks not filesystem):
+	dd if=/dev/DEVICENAME  of=(/)targetfolder/filename.img  (other possible suffixes are .dd (and .iso))
+
+	Example: dd if=/dev/sdh	       of=/tmp/datadumps/datadump_customer.img
+	           (if = inputfile)   (of = outputfile)
+	
+	
+
+
+show partitions:
+	ls -l /dev/devicename* 
+	
+	Example: ls -l /dev/sdh*
+	Result: *information* /dev/sdh
+		*information* /dev/sdh1
+
+
+
+
+show all partitions on linux distribution:
+	cat /proc/partitions
+
+
+
+
+search for strings in dd image:
+	strings filename.suffix (| grep "searchstring") (> "/path/to/targetfile.txt")
+	
+	Example: strings /tmp/datadumps/datadump_customer.img | grep "passwords" > passwordfile.txt
+
+
+
+
+
+recover deleted files:
+	use QPhotoRec (or non gui PhotoRec) and choose the .img
+	alternatively with better results use testdisk
+
+
+
+
+how to recover files using testdisk:
+	start the software
+	choose Create -> enter
+	choose your device -> *name* + *devicename* -> enter
+	choose the filesystem (normally intel) -> enter
+	choose Advanced -> enter
+	choose undelete -> enter
+	choose the file you want to recover -> press c
+	navigate to the target folder
+	press c
+	recover more files or press q multiple times to quit
+
+
+get exif information (metadata) using exiftool:
+	exiftool filename
+	
+	Example: exiftool /tmp/password_file.docx
+
+find information about a file:
+	file filename
+
+	Example file /tmp/password_file.docx
+
+
+
+
+show last connected usb devices (& informations):
+	dmesg
+
+	Example: put in usb
+		 dmesg
+		 *shows all information about product name, serialname, writeprotection*
+
+
+
+
+how to show a serialnumber of an usb stick:
+	use dmesg
+
