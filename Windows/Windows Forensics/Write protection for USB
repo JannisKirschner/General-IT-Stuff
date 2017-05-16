@@ -1,0 +1,8 @@
+Write protection for USB 
+------------------------
+
+
+Add the following registry key:
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorageDevicePolicies]
+“WriteProtect”=dword:00000001
