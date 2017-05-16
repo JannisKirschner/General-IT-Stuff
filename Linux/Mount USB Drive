@@ -1,0 +1,13 @@
+Mount USB Drive
+---------------
+
+Get superuser permissions
+$ su
+
+Create a directory (mountpoint)
+# mkdir /media/targetfolder 
+Example: # mkdir /media/usb-drive 
+
+(mount the device to the mountpoint)
+# mount /dev/DRIVENAME /media/targetfolder/
+Example: # mount /dev/sdc1 /media/usb-drive/
