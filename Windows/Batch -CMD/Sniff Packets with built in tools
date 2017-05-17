@@ -1,0 +1,13 @@
+Sniff Packets with built in tools 
+--------------------------------- 
+ 
+ Start capturing/sniffing with:
+ netsh trace start <parameters>
+ 
+ 
+ and stop it with:
+ netsh trace stop
+ 
+ 
+ 
+ Source: https://isc.sans.edu/forums/diary/No+Wireshark+No+TCPDump+No+Problem/19409/
