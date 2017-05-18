@@ -1,0 +1,5 @@
+Switch between normal and insert mode
+-------------------------------------
+
+Normal = [esc]
+Insert = [i]
