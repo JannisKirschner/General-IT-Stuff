@@ -1,0 +1,7 @@
+Create an automated timestamp on txt files
+------------------------------------------
+
+-Open Notepad
+-Create a new file (happens automatically)
+-Type in " .LOG " (without "") at the start of the document
+-Save it and reopen it
