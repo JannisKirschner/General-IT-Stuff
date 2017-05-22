@@ -1,0 +1,9 @@
+Problems with "" in code editor
+-------------------------------
+
+
+Don't use "" in code editor, they cause major problems.
+Instead you can use ''.
+
+Example BAD: <p style="text-align:center;"> Test </p> <------------WILL RESULT IN A PHP ERROR!!!
+Example RIGHT: <p style='text-align:center;'> Test </p>
