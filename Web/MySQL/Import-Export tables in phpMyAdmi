@@ -1,0 +1,19 @@
+Import-Export tables in phpMyAdmin
+----------------------------------
+
+
+Export:
+-------
+
+-Click on the table to export
+-Scroll down
+-Press the small green "Export" button under "Operations"
+
+
+
+Import:
+-------
+
+-Click on your database
+-Click on the green "Import" button
+-Upload the file
