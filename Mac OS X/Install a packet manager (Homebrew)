@@ -1,0 +1,13 @@
+Install a packet manager (Homebrew)
+-----------------------------------
+
+-Open Terminal
+-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+https://brew.sh/index_de.html
+
+
+
+Example Install:
+
+# brew cask install sage
