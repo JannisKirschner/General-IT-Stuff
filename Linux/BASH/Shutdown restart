@@ -1,0 +1,5 @@
+Shutdown restart
+----------------
+
+
+command is: sudo shutdown -r now
