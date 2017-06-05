@@ -1,0 +1,7 @@
+Show live logs
+--------------
+
+$ tail -f filepath.log
+
+
+the file will update as soon as new information get into the file (-f = follow)
