@@ -1,0 +1,6 @@
+Restart network interfaces
+--------------------------
+
+netsh interface show interface    (Show all interfaces)
+netsh interface set interface NAME FOR EXAMPLE "Wi-Fi" disabled
+netsh interface set interface NAME FOR EXAMPLE "Wi-Fi" enabled
