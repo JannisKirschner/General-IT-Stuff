@@ -1,0 +1,4 @@
+share stuff quickly over the web
+--------------------------------
+
+$ alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
