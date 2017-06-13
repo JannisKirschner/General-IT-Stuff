@@ -1,0 +1,10 @@
+change charset for äöü 
+----------------------
+
+Just add " chcp 1252 " at the start of the script. = change code page
+
+
+
+
+Source: http://www.pctipp.ch/tipps-tricks/kummerkasten/windows-7/artikel/windows-7-umlaute-in-batch-dateien-55616/
+(german article about the issue)
