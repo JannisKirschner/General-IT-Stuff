@@ -7,3 +7,5 @@ If you get the error: Launch failed. Binary not found.
 -click "build project"
 -click "run as" -> run configurations
 -under "C/C++ Application" click on "Browse" or insert the path to the exe created by the build process (mainly found in the "debug" dir)
+
+Source: https://stackoverflow.com/questions/4971926/launch-failed-binary-not-found-cdt-on-eclipse-helios
