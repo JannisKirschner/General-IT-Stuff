@@ -9,3 +9,5 @@ If you get to choose the compiler path/prefix in the project setup process do th
 
 this allows eclipse to find the correct c environment
 -just select the MinGW toolchain
+
+Source: https://stackoverflow.com/questions/34367784/how-do-i-find-what-the-eclipse-cross-settings-prefix-should-be
