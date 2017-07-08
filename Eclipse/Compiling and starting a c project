@@ -1,0 +1,9 @@
+Compiling and starting a c project
+----------------------------------
+
+If you get the error: Launch failed. Binary not found.
+
+-rightclick on the project
+-click "build project"
+-click "run as" -> run configurations
+-under "C/C++ Application" click on "Browse" or insert the path to the exe created by the build process (mainly found in the "debug" dir)
