@@ -1,0 +1,9 @@
+Show Path variables
+-------------------
+
+
+Show Path variables: NAME>  echo %PATH%
+
+Show environment variables: Name> set
+
+Pipe env vars into file: Name> set > filename.txt
