@@ -1,0 +1,11 @@
+Getting Eclipse working with MinGW
+----------------------------------
+
+If you get to choose the compiler path/prefix in the project setup process do the following:
+-Close eclipse
+-Open cmd
+-Name> gcc --version
+-Name> start "path\to\eclipse"
+
+this allows eclipse to find the correct c environment
+-just select the MinGW toolchain
