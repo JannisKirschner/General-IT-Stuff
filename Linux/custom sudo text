@@ -1,0 +1,5 @@
+custom sudo text
+----------------
+
+First open /etc/sudoers with the editor of your choice (and su permissions).
+Then add this line: Defaults  passprompt="Enter whatever you want as a text"
