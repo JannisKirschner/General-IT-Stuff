@@ -1,0 +1,7 @@
+Use python code in your bash scripts
+------------------------------------
+
+To do this you need the following syntax:            sh-cmd $(python -c 'py-cmd')
+
+An example could be:  ./code $(python -c 'print "A"*256') //opens code and passes the output of the py script as param
+
