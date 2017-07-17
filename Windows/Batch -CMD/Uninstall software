@@ -1,0 +1,10 @@
+Uninstall software
+------------------
+
+-Open cmd
+-Type in wmic
+-Type in product get name
+-Type in product where name=”name of program” call uninstall             if you want to skip Y/N add ->   /nointeractive
+
+
+Source: https://www.sevenforums.com/tutorials/272460-programs-uninstall-using-command-prompt-windows.html
