@@ -1,0 +1,10 @@
+Clear clipboard
+---------------
+
+-Open cmd 
+-Type in: @echo off | clip
+
+or
+
+-Windows + [R]
+-Type in: cmd /c "@echo off | clip"
