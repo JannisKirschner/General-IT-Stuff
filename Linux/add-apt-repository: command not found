@@ -1,0 +1,8 @@
+How to fix: add-apt-repository: command not found
+-------------------------------------------------
+
+You have to install $ sudo apt-get install software-properties-common python-software-properties
+
+$ sudo apt-get install software-properties-common python-software-properties
+
+Afterward it should work.
