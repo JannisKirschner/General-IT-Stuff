@@ -1,0 +1,5 @@
+How to install netstat
+----------------------
+
+
+Simply run: apt-get install net-tools
