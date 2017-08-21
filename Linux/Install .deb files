@@ -1,0 +1,4 @@
+Install .deb files
+------------------
+
+sudo dpkg -i Paketnname.deb
