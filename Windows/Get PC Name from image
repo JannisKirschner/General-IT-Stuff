@@ -1,0 +1,35 @@
+Get PC Name from image
+-----------------------
+Source: https://www.aldeid.com/wiki/Volatility/Retrieve-hostname
+
+volatility imageinfo -f ch2.dmp 
+Volatility Foundation Volatility Framework 2.6
+INFO    : volatility.debug    : Determining profile based on KDBG search...
+          Suggested Profile(s) : Win7SP1x86_23418, Win7SP0x86, Win7SP1x86
+                     AS Layer1 : IA32PagedMemoryPae (Kernel AS)
+                     AS Layer2 : FileAddressSpace (/home/hacker/Downloads/rootme/ch2.dmp)
+                      PAE type : PAE
+                           DTB : 0x185000L
+                          KDBG : 0x82929be8L
+          Number of Processors : 1
+     Image Type (Service Pack) : 0
+                KPCR for CPU 0 : 0x8292ac00L
+             KUSER_SHARED_DATA : 0xffdf0000L
+           Image date and time : 2013-01-12 16:59:18 UTC+0000
+     Image local date and time : 2013-01-12 17:59:18 +0100
+
+
+volatility --profile=Win7SP1x86 printkey  -K 'ControlSet001\Control\ComputerName\ComputerName' -f ch2.dmp 
+Volatility Foundation Volatility Framework 2.6
+Legend: (S) = Stable   (V) = Volatile
+
+----------------------------
+Registry: \REGISTRY\MACHINE\SYSTEM
+Key name: ComputerName (S)
+Last updated: 2013-01-12 00:58:30 UTC+0000
+
+Subkeys:
+
+Values:
+REG_SZ                        : (S) mnmsrvc
+REG_SZ        ComputerName    : (S) WIN-ETSA91RKCFP
