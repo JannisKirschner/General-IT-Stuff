@@ -1,0 +1,6 @@
+Symbol    Simple Hex 	  Double Hex
+: 	      %3A 	        %253A
+/ 	      %2F 	        %252F
+. 	      %2E 	        %252E
+– 	      %2D 	        %252D
+= 	      %3D 	        %253D
