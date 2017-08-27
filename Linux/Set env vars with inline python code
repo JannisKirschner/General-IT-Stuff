@@ -1,0 +1,4 @@
+Set env vars with inline python code
+------------------------------------
+
+export ENVVAR=`python -c "print('WHATEVER')"`
