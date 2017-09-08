@@ -10,4 +10,9 @@ Sniff Packets with built in tools
  
  
  
+ Example: netsh trace start capture=yes           <- Captures all traffic and saves it to a emp file
+ 
+   The output is in the etl file format which you can analyze with
+   the software "microsoft message analyzer"
+ 
  Source: https://isc.sans.edu/forums/diary/No+Wireshark+No+TCPDump+No+Problem/19409/
