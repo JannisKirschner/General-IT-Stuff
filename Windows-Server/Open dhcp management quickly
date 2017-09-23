@@ -1,0 +1,6 @@
+Open dhcp management quickly
+---------------------------
+
+-open powershell
+-type in "dhcpmgmt.msc"
+-press enter
