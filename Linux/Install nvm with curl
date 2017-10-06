@@ -1,0 +1,7 @@
+Install nvm with curl
+---------------------
+
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash
+
+
+afterwards open a new shell and test it with $nvm --version
