@@ -7,5 +7,6 @@ Simply install this on client or server:
 http://www.timesynctool.com/
 
 Settings should be your favorite ntp server and an update time of 2 hours.
+Afterwards you have to click on stop and start again to restart the service.
 
 NetTime download link: http://www.timesynctool.com/NetTimeSetup-314.exe
