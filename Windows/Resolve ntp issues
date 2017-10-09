@@ -1,0 +1,11 @@
+Resolve ntp issues
+------------------
+
+There's a neat tool for ntp synchronisation.
+
+Simply install this on client or server:
+http://www.timesynctool.com/
+
+Settings should be your favorite ntp server and an update time of 2 hours.
+
+NetTime download link: http://www.timesynctool.com/NetTimeSetup-314.exe
