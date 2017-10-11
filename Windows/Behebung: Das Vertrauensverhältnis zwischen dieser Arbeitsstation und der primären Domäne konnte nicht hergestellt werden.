@@ -1,0 +1,23 @@
+Behebung: Das Vertrauensverhältnis zwischen dieser Arbeitsstation und der primären Domäne konnte nicht hergestellt werden.
+--------------------------------------------------------------------------------------------------------------------------
+
+Lösung: PC aus Domäne nehmen und wieder hinzufügen.
+
+Problemlösung
+Um dieses Problem zu beheben, entfernen Sie den Computer aus der Domäne und verbinden Sie den Computer mit der Domäne.
+
+Verwenden Sie ein lokales Administratorkonto, um sich an dem Computer anzumelden.
+  Wählen Sie Start, drücken und halten (oder Rechtsklick) Computer > Eigenschaften.
+  Wählen Sie Ändern neben dem Computernamen.
+  Wählen Sie auf der Registerkarte Computername Ändern.
+  Rubrik Mitglied wählen Sie Arbeitsgruppe, geben Sie einen Arbeitsgruppennamen ein und klicken Sie auf OK.
+  Wenn Sie zum Neustarten des Computers aufgefordert werden, wählen Sie OK.
+  Wählen Sie auf der Registerkarte Computername erneut Ändern .
+  Wählen Sie unter der Überschrift Mitglied Domäne ausund geben Sie den Domänennamen ein.
+  Wählen Sie OK, und geben Sie die Anmeldeinformationen des Benutzers, der über Berechtigungen in der Domäne verfügt.
+  Wenn Sie zum Neustarten des Computers aufgefordert werden, wählen Sie OK.
+  Starten Sie den Computer neu.
+  
+  
+  
+  Quelle: https://support.microsoft.com/de-ch/help/2771040/-the-trust-relationship-between-this-workstation-and-the-primary-domai
