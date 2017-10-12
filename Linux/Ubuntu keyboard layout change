@@ -1,0 +1,8 @@
+Ubuntu keyboard layout change
+----------------------
+
+sudo apt-get update
+sudo apt-get install console-data
+
+Afterwards choose QWERTS -> SWISS
+
