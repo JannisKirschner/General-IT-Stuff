@@ -1,0 +1,9 @@
+Fast suffix change
+------------------
+
+
+Renaming/moving files with suffixes quickly:
+cp /home/foo/realllylongname.cpp{,-old}
+
+This expands to:
+cp /home/foo/realllylongname.cpp /home/foo/realllylongname.cpp-old
