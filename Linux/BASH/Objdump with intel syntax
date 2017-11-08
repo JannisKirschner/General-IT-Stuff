@@ -1,0 +1,6 @@
+Objdump with intel syntax
+------------------------
+
+The -M intel flag changes the disassembly flavor
+
+objdump -M intel -d program_name
