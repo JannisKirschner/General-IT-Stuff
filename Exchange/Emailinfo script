@@ -1,0 +1,35 @@
+#Emailinfo script  (email address, alias, forwardaddresses)
+
+get-mailbox | foreach{ 
+
+ $host.UI.Write("Blue", $host.UI.RawUI.BackGroundColor, "`nUser Name: " + $_.DisplayName+"`n")
+
+ for ($i=0;$i -lt $_.EmailAddresses.Count; $i++)
+ {
+    $address = $_.EmailAddresses[$i]
+    
+    $host.UI.Write("Blue", $host.UI.RawUI.BackGroundColor, $address.AddressString.ToString()+"`t")
+
+
+ 
+    if ($address.IsPrimaryAddress)
+    { 
+    	$host.UI.Write("Green", $host.UI.RawUI.BackGroundColor, "Primary Email Address`n")
+    }
+   else
+   {
+    	$host.UI.Write("Green", $host.UI.RawUI.BackGroundColor, "Alias`n")
+    }
+   #write-host $_.EmailAddresses[$i] | select forwardaddress  
+   #write-host $_.EmailAddresses[$i] | Where-Object { $_.ForwardingAddress -ne $null } | select Name, ForwardingAddress
+ }
+ 
+ 
+ $fwds = get-mailbox | Where-Object { $_.ForwardingAddress -ne $null } | select Name, ForwardingAddress
+
+foreach ($fwd in $fwds) {$fwd | add-member -membertype noteproperty -name "ContactAddress" -value (get-contact $fwd.ForwardingAddress).WindowsEmailAddress}
+
+$fwds
+ 
+ 
+}
