@@ -1,0 +1,4 @@
+change curl user agent
+----------------------
+
+curl -A "UserAgentString" http://url.com
