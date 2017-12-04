@@ -1,0 +1,4 @@
+Diff Line by Line comparison
+----------------------------
+
+diff <(nl file1) <(nl file2)
