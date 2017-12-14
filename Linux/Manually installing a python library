@@ -1,0 +1,5 @@
+Manually installing a python library
+------------------------------------
+
+
+Use this command: python setup.py install --user
