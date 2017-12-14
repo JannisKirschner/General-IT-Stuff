@@ -1,0 +1,19 @@
+Writing raw hex bytes to file
+-----------------------------
+
+echo -n bytes  | xxd -r -p > file
+
+
+
+
+echo -n 7A9FDCA5BB061D0D638BE1442586F3488B536399BA05A14FCAE3F0A2E5F268F2F3142D1956769497AE677A12E4D44EC727E255B391005B9ADCF53B4A74FFC34C | xxd -r -p > test.file
+
+
+xxd test.file
+00000000: 7a9f dca5 bb06 1d0d 638b e144 2586 f348  z.......c..D%..H
+00000010: 8b53 6399 ba05 a14f cae3 f0a2 e5f2 68f2  .Sc....O......h.
+00000020: f314 2d19 5676 9497 ae67 7a12 e4d4 4ec7  ..-.Vv...gz...N.
+00000030: 27e2 55b3 9100 5b9a dcf5 3b4a 74ff c34c  '.U...[...;Jt..L
+
+
+You can modify the rest with hexeditor
