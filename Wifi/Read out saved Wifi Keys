@@ -1,0 +1,7 @@
+Read out saved Wifi Keys
+------------------------
+
+use:
+netsh wlan show profile WiFi-name key=clear
+
+*Replace the Wifi-name with your SSID
