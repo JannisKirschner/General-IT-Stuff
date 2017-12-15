@@ -1,0 +1,6 @@
+Show connected Wifi networks under Windows
+------------------------------------------
+
+use:
+
+netsh wlan show profile
