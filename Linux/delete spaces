@@ -1,0 +1,1 @@
+tr -d ' ' < input.txt > no-spaces.txt
