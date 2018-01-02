@@ -1,0 +1,1 @@
+xxd -b some_text | sed -e 's/^.*: //; s/[[:space:]][[:space:]]*.\{6,6\}$//'
