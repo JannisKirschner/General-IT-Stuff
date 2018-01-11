@@ -1,0 +1,9 @@
+git cat-file fatal: not a valid object name
+-------------------------------------------
+
+Use the name with the supperdirectory:
+
+74/hash = 47hash
+
+
+http://ycsoftware.net/git-cat-file-fatal-not-a-valid-object-name/
