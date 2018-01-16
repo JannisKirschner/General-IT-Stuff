@@ -1,0 +1,6 @@
+SQL Query over Powershell
+-------------------------
+
+use invoke-sqlcmd
+
+https://docs.microsoft.com/de-de/powershell/module/sqlserver/invoke-sqlcmd?view=sqlserver-ps
