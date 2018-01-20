@@ -1,0 +1,8 @@
+Create .pfx file for signature
+------------------------------
+
+First get a .crt certificate for example at secorio.
+Then go to outlook -> options -> trustcenter and "export to file"
+Add your .crt, then a name for your .pfx and choose a password.
+
+You can import it in the same window
