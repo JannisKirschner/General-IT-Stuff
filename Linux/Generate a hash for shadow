@@ -1,0 +1,3 @@
+Admin@DESKTOP-I04U0N8:~$ openssl passwd -1 -salt xyz  yourpass
+$1$xyz$X5pC0RUqKE5mOgXcDDgFk0
+
