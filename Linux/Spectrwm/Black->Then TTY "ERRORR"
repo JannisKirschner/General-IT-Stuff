@@ -1,0 +1,2 @@
+If you try to startx spectrwm and it goes black and returns to tty you need to move xinitrc to ~/
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
