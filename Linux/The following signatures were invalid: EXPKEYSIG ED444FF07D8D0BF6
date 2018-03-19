@@ -1,0 +1,6 @@
+The following signatures were invalid: EXPKEYSIG ED444FF07D8D0BF6
+-------------------------------------------
+
+Solution:
+wget 'https://archive.kali.org/archive-key.asc'
+apt-key add archive-key.asc
