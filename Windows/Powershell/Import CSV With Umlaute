@@ -1,0 +1,14 @@
+$personsFilename = ".\persons.csv"
+#Change encoding from ANSI to UTF-8 by reading and saving
+#-Encoding:String # = ANSI = Windows-1252 = iso-8859-1
+ 
+#print content on screeen
+Get-Content $personsFilename -Encoding:String | ft
+ 
+#convert to UTF-8. type is alias for Get-Content
+type $personsFilename -Encoding:String | Out-File $personsFilename"UTF8.csv" -Encoding:UTF8
+ 
+#Import-Csv by default accepts UTF-8
+Import-Csv $personsFilename"UTF8.csv" -Delimiter:";" | Where-Object {$_.UserID -ieq "ABC"} | ft
+Import-Csv $personsFilename"UTF8.csv" -Delimiter:";" | Where-Object {$_.UserID -ieq "ABC"} | Export-Csv $personsFilename"FilteredUTF8.csv" -NoTypeInformation -Delimiter:";" -Encoding:UTF8
+$personsFile = Import-Csv $personsFilename"UTF8.csv" -Delimiter:";"
