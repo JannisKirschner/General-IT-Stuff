@@ -1,1 +1,49 @@
+pkg install lemonbar
+First create the file ~/.config/lemonbarconf.sh  
 
+Now fill it with your config:
+(Lemonbar works by putting out what you pipe in it)
+
+Clock:
+
+#!/usr/bin/bash
+
+# Define the clock
+Clock() {
+        DATETIME=$(date "+%a %b %d, %T")
+
+        echo -n "$DATETIME"
+}
+
+# Print the clock
+
+while true; do
+        echo "%{c}%{F#FFFF00}%{B#0000FF} $(Clock) %{F-}%{B-}"
+        sleep 1
+done
+
+
+
+Network Traffic:
+
+network() {
+
+raw_output=`network_monitor --simplest_output_setting`
+just_the_number=`echo $raw_output | various grep, awk, and sed commands`
+
+if [ "$just_the_number" = "formatted wrong" ]; then
+  format_correctly($just_the_number)
+elif [ "$just_the_number" = "needs extra features" ]; then
+  add_features($just_the_number color icon etc)
+else
+  return
+fi
+
+echo "$just_a_number Kb/s upload rate" > $fifo or $buffer
+
+}
+
+More https://wiki.archlinux.org/index.php/lemonbar
+http://blog.z3bra.org/2014/04/meeting-at-the-bar.html
+
+Now add the following line to your .xinitrc: "sh ~/.config/lemonbarconf.sh |lemonbar -p"
