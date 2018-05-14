@@ -1,0 +1,6 @@
+pkg install feh
+wget your wallpaper
+wget https://image.ibb.co/eGL8Ld/wallpaper_mikael_gustafsson.png
+mv ... wallpaper.png
+mv ./wallpaper.png ~/.config/
+Add "feh --bg-scale ~/.config/wallpaper.png &" to .xinitrc
