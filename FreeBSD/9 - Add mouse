@@ -27,3 +27,5 @@ Press " [super] + s " to switch a windows to float mode
 Press " [super] + left " mouse to drag a window around
 Press " [super] + right " to adjust a windows size (this is also possible withough [super])
 Press " [super] + middle " to only adjust the height/length
+
+Todo -> without super
