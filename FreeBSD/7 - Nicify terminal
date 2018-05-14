@@ -1,0 +1,9 @@
+touch ~/.Xdefaults
+"""
+urxvt*transparent: true
+urxvt*shading: 30
+urxvt.foreground: White
+""""
+
+If you want to take a nice screenshot for showing of:
+pkg install screenfetch
