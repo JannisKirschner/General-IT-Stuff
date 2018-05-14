@@ -1,0 +1,6 @@
+-First open a root shell
+
+
+w32tm /query /configuration
+w32tm /query /status
+Time /T 
