@@ -3,7 +3,10 @@ touch ~/.Xdefaults
 urxvt*transparent: true
 urxvt*shading: 30
 urxvt.foreground: White
+urxvt*scrollBar: False
 """"
 
 If you want to take a nice screenshot for showing of:
 pkg install screenfetch
+
+https://bbs.archlinux.org/viewtopic.php?id=122077
