@@ -7,6 +7,7 @@ pkg install rxvt-unicode
 
 -logon with user
 
+mkdir ~/.config/
 mkdir ~/.config/bspwm/
 mkdir ~/.config/sxhkd/
 
