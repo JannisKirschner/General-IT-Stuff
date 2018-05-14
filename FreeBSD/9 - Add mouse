@@ -3,3 +3,27 @@ https://www.reddit.com/r/bspwm/comments/6t2iuh/cant_move_windows_with_mouse/
 drag and drop windows
 resize windows
 mousewheel
+
+
+Add this to ~/.config/sxhkd/sxhkdrc
+
+# Mouse pointer raises focus on window
+~button1
+    bspc pointer -g focus
+
+# Mouse button to move and resize
+super + shift + button{1-3}
+    bspc pointer -g {move,resize_side,resize_corner}
+
+super + shift + !button{1-3}
+    bspc pointer -t %i %i
+
+super + shift + @button{1-3}
+    bspc pointer -u
+    
+    
+How it works? ([super] = windows key)
+Press " [super] + s " to switch a windows to float mode
+Press " [super] + left " mouse to drag a window around
+Press " [super] + right " to adjust a windows size (this is also possible withough [super])
+Press " [super] + middle " to only adjust the height/length
