@@ -22,7 +22,7 @@ vi ~/.xinitrc
 """
 sxhkd &
 setxkbmap ch &
-erxvt & 
+urxvt & 
 exec bspwm
 
 """
