@@ -1,1 +1,5 @@
+Get yourself a config or create one.
+I used this one: https://www.reddit.com/r/unixporn/comments/211kkg/archbspwm_finally_went_tiled_oh_my/
 
+simply create a file with the content under ~/.config/compton.conf
+Now add "compton --config ~/.config/compton.conf" to your .xinitrc
