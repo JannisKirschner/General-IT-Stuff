@@ -1,1 +1,1 @@
-mount -t cd9660 /dev/cd0 /mnt
+mount -t cd9660 -u -rw /dev/cd0 /mnt
