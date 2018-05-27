@@ -1,0 +1,5 @@
+https://linux-audit.com/updating-all-openbsd-packages-with-pkg_add/
+
+export PKG_PATH=”http://ftp.openbsd.org/pub/OpenBSD/$(uname -r)/packages/$(arch -s)/”
+
+# pkg_add -uvi
