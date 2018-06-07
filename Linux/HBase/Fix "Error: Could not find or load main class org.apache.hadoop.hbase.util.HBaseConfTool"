@@ -1,0 +1,10 @@
+Error: Could not find or load main class org.apache.hadoop.hbase.util.HBaseConfTool
+Error: Could not find or load main class org.apache.hadoop.hbase.zookeeper.ZKServerTool
+running master, logging to /usr/local/Hbase/logs/hbase-root-master-ip-172-31-44-16.out
+nice: ‘/usr/local/Hbase/bin/hbase’: No such file or directory
+cat: /usr/local/Hbase/conf/regionservers: No such file or directory
+cat: /usr/local/Hbase/conf/regionservers: No such file or directory
+
+
+$ export HBASE_HOME=/usr/local/HBase/
+(Export to the path where all the Hbase directories are)
