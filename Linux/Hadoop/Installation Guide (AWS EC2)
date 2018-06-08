@@ -1,0 +1,117 @@
+Hadoop
+-------
+
+When configuring the ec2 instance set the following rules:
+All ICMP -> Anywhere
+HTTP -> Anywhere
+HTTPS -> Anywhere
+SSH -> Anywhere 
+Custom TCP (9000, 9001, 50070, 50030, 50075, 
+50060, 8088) -> Anywhere
+
+$ sudo useradd -m hadoop
+$ visudo -> add hadoop  ALL=(ALL) NOPASSWD: ALL
+$ ssh-keygen -t rsa -> [enter] x 3
+$ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+$ chmod 0600 ~/.ssh/authorized_keys
+$ ssh localhost -> [yes] -> (must work now) and exit again
+$ passwd hadoop -> set password
+$ su hadoop
+$ cd ~
+
+$ sudo apt-get update
+$ sudo sudo apt-get install default-jre
+$ sudo apt-get install default-jdk
+$ nano ~/.profile -> add to end of file
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
+
+$ source ~/.profile
+
+$ wget http://mirror.easyname.ch/apache/hadoop/common/hadoop-2.8.4/hadoop-2.8.4.tar.gz
+$ tar -xzvf hadoop-2.8.4.tar.gz
+$ sudo mv hadoop-2.8.4 /usr/local/hadoop
+$ rm hadoop-2.8.4.tar.gz
+
+******************************************
+Only use if additional bashrc doesn't work
+
+$ nano ~/.bashrc -> add to end of file
+
+export HADOOP_PREFIX=/usr/local/hadoop
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+export HADOOP_HOME=/usr/local/hadoop
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFC_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export HADOOP_OPTS="-Djava.library.path = $HADOOP_HOME/lib"
+export PATH=$PATH:$HADOOP_HOME/bin/:$JAVA_HOME/bin:$HADOOP_HOME/bin
+
+$ source ~/.bashrc
+**************************************
+$ nano /usr/local/hadoop/etc/hadoop/hadoop-env.sh -> replace JAVA_HOME=${JAVA_HOME} with JAVA_HOME= /usr/lib/jvm/java-1.8.0-openjdk-amd64
+$ nano ~/.profile -> add to end of file
+
+export HADOOP_HOME=/usr/local/hadoop
+export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
+
+
+
+
+/* Additional bashrc
+# Hadoop Properties
+export HADOOP_PREFIX=/usr/local/hadoop # installation location
+export HADOOP_HOME=$HADOOP_PREFIX
+export HADOOP_COMMON_HOME=$HADOOP_PREFIX
+export HADOOP_CONF_DIR=$HADOOP_PREFIX/etc/hadoop
+export HADOOP_HDFS_HOME=$HADOOP_PREFIX
+export HADOOP_MAPRED_HOME=$HADOOP_PREFIX
+export HADOOP_YARN_HOME=$HADOOP_PREFIX
+
+export PATH=$PATH:$HADOOP_PREFIX/bin
+
+# Aliases for Starting Hadoop Processes
+alias start-namenode="$HADOOP_PREFIX/sbin/hadoop-daemon.sh start namenode"
+alias start-datanode="$HADOOP_PREFIX/sbin/hadoop-daemon.sh start datanode"
+alias start-resource-manager="$HADOOP_PREFIX/sbin/yarn-daemon.sh start resourcemanager"
+alias start-node-manager="$HADOOP_PREFIX/sbin/yarn-daemon.sh start nodemanager"
+alias start-job-history-server="$HADOOP_PREFIX/sbin/mr-jobhistory-daemon.sh start historyserver"
+
+# Aliases for stopping Hadoop Processes
+alias stop-namenode="$HADOOP_PREFIX/sbin/hadoop-daemon.sh stop namenode"
+alias stop-datanode="$HADOOP_PREFIX/sbin/hadoop-daemon.sh stop datanode"
+alias stop-resource-manager="$HADOOP_PREFIX/sbin/yarn-daemon.sh stop resourcemanager"
+alias stop-node-manager="$HADOOP_PREFIX/sbin/yarn-daemon.sh stop nodemanager"
+alias stop-job-history-server="$HADOOP_PREFIX/sbin/mr-jobhistory-daemon.sh stop historyserver"
+*/
+
+$ sudo reboot
+$ su hadoop
+
+# Test installation
+$ mkdir ~/input
+$ cp /usr/local/hadoop/etc/hadoop/*.xml ~/input
+$ /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.8.4.jar grep ~/input ~/grep_example 'principal[.]*'
+$ cat ~/grep_example/*
+
+
+$ Configure hadoop
+https://medium.com/@yzhong.cs/hbase-installation-step-by-step-guide-cb73381a7a4c
+
+
+$ hdfs namenode -format
+$ ssh-keygen -t rsa -> [enter] x 3
+$ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+$ chmod 0600 ~/.ssh/authorized_keys
+$ cd $HADOOP_HOME/sbin/
+$ ./start-dfs.sh
+$ ./start-yarn.sh
+$ jps
+
+
+http://ec2-54-93-230-8.eu-central-1.compute.amazonaws.com:50070/dfshealth.html#tab-startup-progress
+http://ec2-54-93-230-8.eu-central-1.compute.amazonaws.com:8088/cluster
