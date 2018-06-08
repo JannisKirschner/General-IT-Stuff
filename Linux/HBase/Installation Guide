@@ -1,0 +1,28 @@
+First install hadoop and run it
+Use user hadoop for this installation
+
+
+
+
+$ cd ~
+$ wget http://mirror.switch.ch/mirror/apache/dist/hbase/2.0.0/hbase-2.0.0-bin.tar.gz
+$ tar -zxvf hbase-2.0.0-bin.tar.gz 
+$ sudo mv hbase-2.0.0 /usr/local/HBase/
+
+
+Add to profile and source
+export HBASE_HOME=/usr/local/Hbase
+export PATH=$PATH:$HBASE_HOME/bin
+
+
+$ nano  /usr/local/Hbase/conf/hbase-env.sh -> add export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+
+
+Hbase config
+https://medium.com/@yzhong.cs/hbase-installation-step-by-step-guide-cb73381a7a4c
+
+add export HBASE_HOME=/usr/local/HBase/ to bashrc and source
+
+
+$ cd /usr/local/HBase/bin
+$ ./start-hbase.sh
