@@ -6,6 +6,7 @@ pkg install i3lock
 
 touch ~/.config/lock.sh
 
+Afterwards download an icon you'd like (png) and copy it to .config (or create an i3lock subdirectory)
 
 
 lock.sh:
@@ -16,8 +17,7 @@ lock.sh:
 
 IMAGE=/tmp/lockscreen.png
 TEXT=/tmp/locktext.png
-ICON=/home/badel/Pictures/Icons/Lock-icon.png
-
+ICON=~/.config/i3lock/icon.png
 scrot $IMAGE
 convert $IMAGE -scale 10% -scale 1000% -fill black -colorize 25% $IMAGE
 [ -f $TEXT ] || { 
