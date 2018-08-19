@@ -63,12 +63,12 @@ Clockicon(){
 }
 
 Clock(){
-        DATE=${date "+%m.%d.%y"}
-        TIME=${date "+%I:%M"}
+        DATE=$(date "+%m.%d.%y")
+        TIME=$(date "+%I:%M")
         echo -e "${DATE} ${TIME}"
 }
 
 while true; do
-        echo -e "${Clock}"
+        echo -e "$(Clock)"
         sleep 1
 done
