@@ -198,3 +198,14 @@ super + shift + !button{1-3}
 
 super + shift + @button{1-3}
     bspc pointer -u
+
+
+
+
+Add clipboard:
+
+pkg install xclip
+
+
+
+(mark what you want and paste it with the middle mouse)
