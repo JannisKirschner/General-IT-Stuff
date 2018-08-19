@@ -11,8 +11,8 @@ mkdir ~/.config/
 mkdir ~/.config/bspwm/
 mkdir ~/.config/sxhkd/
 
-cp /usr/local/examples/bspwm/bspwmrc ~/.config/bspwm/
-cp /usr/local/examples/bspwm/sxhkdrc ~/.config/sxhkd/
+cp /usr/local/share/examples/bspwm/bspwmrc ~/.config/bspwm/
+cp /usr/local/share/examples/bspwm/sxhkdrc ~/.config/sxhkd/
 chmod +x ~/.config/bspwm/bspwmrc
 chmod +x ~/.config/sxhkd/sxhkdrc
 
