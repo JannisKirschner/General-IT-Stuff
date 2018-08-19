@@ -1,7 +1,7 @@
 pkg install conky
 
 cp /usr/local/share/examples/conky/conky.conf ~/.conkyrc
-
+add "conky &" to ~/.xinitrc
 
 conkyrc:
 
