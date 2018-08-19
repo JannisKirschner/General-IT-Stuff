@@ -68,7 +68,7 @@ Clock(){
         echo -e "${DATE} ${TIME}"
 }
 
-while ture; do
+while true; do
         echo -e "${Clock}"
         sleep 1
 done
