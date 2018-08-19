@@ -47,3 +47,28 @@ More https://wiki.archlinux.org/index.php/lemonbar
 http://blog.z3bra.org/2014/04/meeting-at-the-bar.html
 
 Now add the following line to your .xinitrc: "sh ~/.config/lemonbarconf.sh |lemonbar -p"
+
+
+
+My config:
+
+#!/usr/bin/bash
+
+Calendar(){
+        echo -n -e "%{\f073}"
+}
+
+Clockicon(){
+        echo -n -e "%{\f017}"
+}
+
+Clock(){
+        DATE=${date "+%m.%d.%y"}
+        TIME=${date "+%I:%M"}
+        echo -e "${DATE} ${TIME}"
+}
+
+while ture; do
+        echo -e "${Clock}"
+        sleep 1
+done
