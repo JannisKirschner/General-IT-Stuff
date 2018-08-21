@@ -1,1 +1,19 @@
+pkg install cowsay
+
+          _________                   _____   _______   _____
+         /   _____/                  /     \ /   ___/  /     \
+        /   /__ __ __ ____   ____   /   /  //   /__   /   /\  \
+       /   ___//  /_//  . \ /  . \ /   __  \\__    \ /   / /  /
+      /   /   /  /  /  ___//  ___//   /_/  /__/    //   /_/  /
+     /___/   /__/   \____/ \____/ \_______//______//________/
+
+ NEVER QUIT - use vim >
+
+
+echo -e "System: " $(uname -a)
+echo -e "User: " $(whoami)
+echo -e "Disk Space: " $(df -H | grep -vE '^Filesystem|tmpfs|cdrom' | awk 'NR==1{ print $5 " " $1 " " $2 }')
+echo -e "Date: " $(date)
+
+cowsay $(fortune)
 
