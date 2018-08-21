@@ -1,0 +1,2 @@
+Error: D-Bus library appears to be incorrectly set up; failed to read machine uuid: Failed to open “/var/lib/dbus/machine-id”
+Fix: # dbus-uuidgen > /var/lib/dbus/machine-id
