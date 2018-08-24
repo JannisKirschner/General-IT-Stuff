@@ -1,0 +1,9 @@
+PS C:\Windows\system32> cd "C:\Program Files (x86)\Microsoft SDKs\Azure\Storage Emulator\"
+PS C:\Program Files (x86)\Microsoft SDKs\Azure\Storage Emulator> .\AzureStorageEmulator.exe start
+Windows Azure Storage Emulator 5.7.0.0 command line tool
+The storage emulator was successfully started.
+PS C:\Program Files (x86)\Microsoft SDKs\Azure\Storage Emulator>
+
+Now it should work again
+
+Src: https://github.com/Azure/azure-storage-net/issues/704
