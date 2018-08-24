@@ -1,0 +1,5 @@
+Add this to startup (ConfigureServices() funciton):
+
+services.AddMvc().AddJsonOptions(
+                options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
