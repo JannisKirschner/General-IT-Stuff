@@ -1,0 +1,8 @@
+Go to app registration and click on your app.
+Then click on edit manifest.
+
+Now change this value:   "publicClient": false/true
+
+
+publicClient : false = WebApp
+publicClient : true = Native App
