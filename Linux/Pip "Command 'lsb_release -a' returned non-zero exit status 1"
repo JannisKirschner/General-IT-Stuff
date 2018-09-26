@@ -1,0 +1,4 @@
+To fix the error: Command 'lsb_release -a' returned non-zero exit status 1
+
+Just use: sudo rm /usr/bin/lsb_release
+
