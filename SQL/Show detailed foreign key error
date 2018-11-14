@@ -1,0 +1,4 @@
+Use this mysql command:
+SHOW ENGINE INNODB STATUS;
+
+You'll find it under: LATEST FOREIGN KEY ERROR
