@@ -1,0 +1,12 @@
+From the start menu, open Run (or press ⊞ Win+R).
+Type regedit
+Find HKEY_LOCAL_MACHINE folder
+Go to the SYSTEM folder
+Go to the ControlSet002 folder
+Go to Control folder
+Go to Session Manager
+Go to Environment folder
+Then, inside Environment folder, double click Path
+The previous Path should be there.
+
+source: https://superuser.com/questions/523688/deleted-path-environment-variable-how-to-restore
