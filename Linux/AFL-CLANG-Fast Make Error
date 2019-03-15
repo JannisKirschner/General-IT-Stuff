@@ -1,0 +1,11 @@
+Mitigation:
+
+In your base afl directory (i.e. in afl-2.52b), run following:
+make && make -C llvm_mode LLVM_CONFIG=llvm-config-6.0 CC=clang-6.0
+
+
+Full installation steps:
+
+cd ~/AFL && wget http://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz
+tar xzf afl-latest-X.tgz
+make && make -C llvm_mode LLVM_CONFIG=llvm-config-6.0 CC=clang-6.0
