@@ -1,0 +1,18 @@
+This is because it's most likely a 32bit application.
+
+On 64 bit system with 32 bit Office try this:
+- Start
+- Run
+- mmc -32
+- File
+- Add Remove Snap-in
+- Component Services
+- Add
+- OK
+- Console Root
+- Component Services
+- Computers
+- My Computer
+- DCOM Config
+- Microsoft Excel Application
+...
