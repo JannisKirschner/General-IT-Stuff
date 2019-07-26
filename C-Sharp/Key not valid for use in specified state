@@ -1,0 +1,2 @@
+Error: System.Security.Cryptography.CryptographicException: Key not valid for use in specified state. x509
+Solution: Import cert and mark as exportable
