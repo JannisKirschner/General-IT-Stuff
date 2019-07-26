@@ -1,0 +1,5 @@
+$EventSourceName = "Source Name"
+if ([System.Diagnostics.EventLog]::SourceExists($EventSourceName) -eq $false) {
+   Write-Host "Creating event source [$EventSourceName] on event log [Application]"
+   [System.Diagnostics.EventLog]::CreateEventSource("$EventSourceName",'Application')
+} else { Write-Host "Event source [$EventSourceName] is alread registered" }
