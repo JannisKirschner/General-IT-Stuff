@@ -1,0 +1,1 @@
+usermod --password $(echo my_new_password | openssl passwd -1 -stdin) USERNAME
