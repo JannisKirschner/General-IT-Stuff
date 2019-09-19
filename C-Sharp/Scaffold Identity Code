@@ -1,0 +1,4 @@
+Right click on solution -> Add -> New Scaffold Item -> Identity
+Register service in startup.cs
+
+https://kenhaggerty.com/articles/article/aspnet-core-22-scaffold-identity-ui
