@@ -1,0 +1,3 @@
+Clear nuget cache
+
+dotnet nuget locals all -clear
