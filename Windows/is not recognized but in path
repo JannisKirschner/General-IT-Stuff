@@ -1,0 +1,6 @@
+Environment PATH Length Limitation is 1024 characters
+Note that the user interface will happily allows you to define a PATH that is way longer than 1024, and will just truncate anything longer than this.
+NOTE: Your PATH = SYSTEM_PATH + USER_PATH, so you need to make sure the combined is < 1024.
+
+https://stackoverflow.com/questions/24186823/python-not-recognized-in-windows-cmd-even-after-adding-to-path
+
