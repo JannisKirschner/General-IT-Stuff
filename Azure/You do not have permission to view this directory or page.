@@ -1,0 +1,12 @@
+If you're using windows identity you need to connect it to AAD:
+
+From my experience, if your login user ID under Azure Active Directory (AAD), you have to modify in Settings:
+
+Authentication / Authorization
+App Service Authentication, "ON" =>> choose: Log in With Azure Active Directory
+Select 'ActivityProvider', base on your purpose. In my case, I'm using AAD.
+Configured (Express: Existing APP)
+Manage Azure Active Directory: Manage Permission & Manage Application
+For Manage Permission ==>> Add, In Delegate Permission, choose: Sign in and read user profile and refresh your browser to login again
+
+src: https://stackoverflow.com/questions/48853599/azure-website-message-you-do-not-have-permission-to-view-this-directory-or-page/51631122#51631122
